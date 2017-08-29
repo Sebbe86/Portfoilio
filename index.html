@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>This page is about me!</title>
+    <style>
+    p {font-size:40px;
+text-align:center;
+}
+h1 {text-align:center;
+font-size:70px;}
+.flash {
+   animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
+}
+h2 {color:blck;
+font-size:40x;
+text-align:center;}
+h3 {color:blck;
+font-size:30px;
+text-align:center;}
+li {color:black;
+text-align:center;
+list-style-position: inside;
+font-size:25px}}
+img {display:block; margin-left:auto; margin-right:auto}
+body {background-image: url("https://www.intersport.se/Root/inRiver%20Resources/141830914712175382.png")}
+a {text-align:center;
+display: block;
+margin: 0 auto;
+color: black}
+.scroll-left {
+  width: 900px;
+  height:170px;
+  overflow: hidden;
+  position: relative;
+  color: black;
+}
+
+.scroll-left p {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  font-size:150px;
+  line-height: 170px;
+  margin: 0;
+  text-align: center;
+  white-space:nowrap;
+  /* Starting position */
+  
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  
+  -moz-animation: scroll-left 13s linear infinite;
+  -webkit-animation: scroll-left 13s linear infinite;
+  animation: scroll-left 13s linear infinite;
+}
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Browser bug fix */
+    
+    -webkit-transform: translateX(100%);
+    /* Browser bug fix */
+    
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Browser bug fix */
+    
+    -webkit-transform: translateX(-100%);
+    /* Browser bug fix */
+    
+    transform: translateX(-100%);
+  }
+}
+.scroll-left{margin:auto;
+width:70%}
+    </style>  
+  </head>
+  <body>
+<h1 class="flash">Sebastian Mellqvist</h1>
+<h2>Jobbar på UseradministrationSE</h2>
+<h3>Sportintresserad</h3>
+
+  <li>Innebandy</li>
+  <li>Fotboll</li>
+  <li>Liverpool</li>
+</ul>
+<a href="http://www.innebandy.se">Innebandy</a>
+<div class="scroll-left">
+<p>idag är jag på en utbildning och lär mig göra min egna hemsida</p>
+</div>
+<ul>
+<img src="https://www.intersport.se/Root/inRiver%20Resources/141830914712175382.png"/>
+    </body>
+</html>
